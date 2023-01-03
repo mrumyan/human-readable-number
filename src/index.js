@@ -8,7 +8,7 @@ module.exports = function toReadable(number) {
         case 1: // 0 - 9
             return units[digitsArray[0]];
         case 2:
-            if (+digitsArray[0] === 1) { //10 - 19
+            if (+digitsArray[0] === 1) { // 10 - 19
                 return additionalNumbers[digitsArray[1]];
             } else { // 20 - 99
                 let result = dozens[digitsArray[0] - 2];
